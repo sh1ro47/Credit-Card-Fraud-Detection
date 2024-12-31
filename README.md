@@ -1,6 +1,5 @@
 # Credit-Card-Fraud-Detection
  
-```markdown
 # Credit Card Fraud Detection
 
 ## Overview
