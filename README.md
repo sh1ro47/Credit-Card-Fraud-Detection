@@ -22,7 +22,7 @@ This project aims to build a machine learning model to detect fraudulent credit 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Priykrit/Credit-Card-Fraud-Detection.git
+   https://github.com/sh1ro47/Credit-Card-Fraud-Detection
    ```
 
 2. Install the required dependencies:
