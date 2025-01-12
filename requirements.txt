@@ -1,0 +1,7 @@
+pandas
+ydata-profiling
+ipywidgets
+scikit-learn
+xgboost
+streamlit
+-e .

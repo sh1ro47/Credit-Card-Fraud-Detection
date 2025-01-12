@@ -1,102 +1,28 @@
-# Credit-Card-Fraud-Detection
- 
+## Credit Card Fraud Detection
+> Comprehensive Credit Card Fraud Detection project adhering to _**Industry Standards**_.
+>
+> ![cc1](https://github.com/Priykrit/Credit-Card-Fraud-Detection/assets/98400044/d296249c-a718-4703-ab4e-ff886c716b0d)
+
+> Developed _**Pipelines**_ for training and prediction, including **_automatic model selection_** based on precision. Implemented robust logging and exception-handling mechanisms.
+>
+> Selected _Naive Bayes_ as the best model with a **_precision_** of **_0.62_** for predicting _customer default on the next payment_.
+>
+> Utilized Streamlit to create an interactive interface with dedicated sections for:
+>
+> > Exploratory Data Analysis (EDA) included visualizations such as a correlation matrix heatmap.
+> >
+> > A dedicated page predicts whether the customer will default on the next payment.
+> >
+> > > ![cc2](https://github.com/Priykrit/Credit-Card-Fraud-Detection/assets/98400044/5d6303c9-e774-4d3a-8539-5fe6e9b7a295)
+> > >
+> > > ![cc3](https://github.com/Priykrit/Credit-Card-Fraud-Detection/assets/98400044/8e88175a-40b6-43fc-8e20-12934c3ac0ca)
 
 
-## Overview
-This project aims to build a machine learning model to detect fraudulent credit card transactions. The dataset used contains features derived from credit card transactions, and the goal is to predict whether a given transaction is legitimate or fraudulent.
-
-## Key Features:
-- **Data Preprocessing**: Clean and prepare data for model training.
-- **Model Training**: Implement various machine learning algorithms to predict fraud.
-- **Evaluation**: Assess the model's performance using metrics like accuracy, precision, recall, and F1-score.
-- **Visualization**: Visualize key statistics and model performance.
-  
-## Technologies Used:
-- **Python**: Programming language used for implementation.
-- **Pandas**: Data manipulation and analysis.
-- **NumPy**: Scientific computing and data processing.
-- **Scikit-learn**: Machine learning algorithms and tools.
-- **Matplotlib & Seaborn**: Data visualization.
-  
-## Installation
-
-1. Clone the repository:
-   ```bash
-   https://github.com/sh1ro47/Credit-Card-Fraud-Detection
-   ```
-
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Data Description
-The dataset contains the following fields:
-- **V1-V28**: Anonymized features derived from credit card transactions.
-- **Amount**: The transaction amount.
-- **Class**: 1 if the transaction is fraudulent, 0 if legitimate.
-
-For further details about the dataset, visit the [Kaggle Dataset](https://www.kaggle.com/datasets) link.
-
-## Model Training
-
-### Steps:
-1. **Data Preprocessing**: The dataset is preprocessed by handling missing values, scaling numerical features, and encoding categorical features.
-   
-2. **Model Selection**: Multiple machine learning models are used for classification:
-   - Logistic Regression
-   - Random Forest
-   - Support Vector Machines (SVM)
-   - XGBoost
-
-3. **Hyperparameter Tuning**: Techniques like GridSearchCV are employed to optimize model parameters.
-
-4. **Evaluation**: The models are evaluated using metrics like:
-   - Accuracy
-   - Precision
-   - Recall
-   - F1-Score
-   - ROC-AUC
-  
-## Results
-
-### Model Performance:
-
-| Model               | Accuracy (%) | Precision (%) | Recall (%) | F1-Score (%) | ROC-AUC (%) |
-|---------------------|--------------|---------------|------------|--------------|-------------|
-| Logistic Regression | 98.3         | 91.2          | 98.0       | 94.5         | 0.98        |
-| Random Forest       | 99.5         | 95.8          | 99.2       | 97.5         | 0.99        |
-| SVM (Linear)        | 99.1         | 93.5          | 98.8       | 96.1         | 0.99        |
-| XGBoost             | 99.7         | 97.3          | 99.5       | 98.4         | 0.99        |
-
-- **Best Performing Model**: XGBoost, with the highest accuracy, precision, recall, F1-score, and ROC-AUC.
-
-## How to Use
-1. Load the dataset using the `load_data.py` script.
-2. Train the model using the `train_model.py` script.
-3. Evaluate the model using the `evaluate_model.py` script.
-
-Example:
-```bash
-python train_model.py
-python evaluate_model.py
-```
-
-## Contributing
-If you would like to contribute to this project:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes.
-4. Push your changes to your fork.
-5. Create a pull request to the `main` branch.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-### Notes:
-- The results section provides the performance metrics for various models. You can update the values based on your actual results.
-- The table format is used to clearly present the metrics.
-- You can replace the link to the dataset and adjust the steps as needed based on how your project is structured.
-
-Let me know if you'd like any further adjustments!
+### To Run project
+> Create venv with _**python==3.8.0**_
+> 
+> Install all requirements with _**pip install -r requirements.txt**_
+> 
+> Run _**python src/pipelines/training_pipeline.py**_ in terminal from root dir to create preprocessor and model file
+> 
+> Run _**streamlit run application.py**_ in terminal from root dir to run the web app
